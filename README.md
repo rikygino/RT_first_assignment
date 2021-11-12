@@ -109,21 +109,22 @@ for m in markers:
 
 ## Pseudocode
 
+```
 a_th = 2.0  #float: Threshold for the control of the linear distance
 
 d_th = 0.4  #float: Threshold for the control of the orientation
 
 R = Robot()  #instance of the class Robot
 
-```
 function drive(speed, seconds)
 	turn on the motors with the speed received as a parameter
 	then put in pause the motors after the time interval 'seconds'
 
 function turn(speed, seconds)
 	setting an angular velocity using "speed"
-```
+
 function findSilverToken()
+
     initialize distance at 100
     for each token that can seen by Robot()
         if the token have a value of the distance that is less than 100 
@@ -140,6 +141,7 @@ function findSilverToken()
         return distance and angle
 
 function findGoldenToken()
+
     initialize distance at 100
     for each token that can seen by Robot()
         if the token have a value of the distance that is less than 100 
@@ -155,6 +157,7 @@ function findGoldenToken()
         return distance and angle
 
 function seeWalls()
+
     initialize distance at 100
     for each token that can seen by Robot()
         if the token have a value of the distance that is less than 100 
@@ -173,7 +176,7 @@ function seeWalls()
 
 
 function keepMeInTrack(angle_golden)
-    
+
     if there is a wall of golden tokens in front of the robot in the range 15 to -15 angle_golden
         see if near the robot there are other walls with seeWalls()
 
