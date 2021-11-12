@@ -115,13 +115,14 @@ d_th = 0.4  #float: Threshold for the control of the orientation
 
 R = Robot()  #instance of the class Robot
 
+```
 function drive(speed, seconds)
 	turn on the motors with the speed received as a parameter
 	then put in pause the motors after the time interval 'seconds'
 
 function turn(speed, seconds)
 	setting an angular velocity using "speed"
-
+```
 function findSilverToken()
     initialize distance at 100
     for each token that can seen by Robot()
