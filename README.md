@@ -215,7 +215,6 @@ function grabSilverToken(dist_golden, rot_y_golden, dist_silver, rot_y_silver):
 
 function main()
     while true
-
         set dist_golden, rot_y_golden equal to the values returned by findGoldenToken()
         set dist_silver, rot_y_silver equal to the values returned by findSilverToken()
 
@@ -225,13 +224,11 @@ function main()
             the robot is near a silver token so it will go to grab it with
             grabSilverToken(dist_golden, angle_golden, dist_silver, angle_silver)
 
-
+```
 ----------------------------------------------------------------------
 
 ## Possible Improvements
 
+
  - Using golden tokens to align the robot with the silver token so that it turns perfectly a 180 degrees
  - The functions findGoldenToken() and findSilverToken() can be sticked togheter (It gave me some problems doing that, so I preferred to have a code that was working good, rather than having bugs)
-
-
-----------------------------------------------------------------------
